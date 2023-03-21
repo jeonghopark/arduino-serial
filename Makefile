@@ -17,7 +17,7 @@ ifeq "$(OS)" "macosx"
 
 EXE_SUFFIX=
 
-ARCHS=   -arch i386 -arch x86_64
+ARCHS= -arch x86_64
 CFLAGS+= $(ARCHS)
 CFLAGS += -mmacosx-version-min=10.6
 CFLAGS_MONGOOSE=  -I./mongoose -pthread -g 
